@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FND</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/predict">Predict</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="about-section">
+                <h2>About Our Mission</h2>
+                <p>In an era where information is abundant and instantly accessible, the line between truth and falsehood has never been more blurred. Our mission is to empower individuals with the tools to navigate this complex landscape. We believe in a world where decisions are based on facts, not fiction. This project is our contribution to that vision.</p>
+                
+                <h3>The Technology</h3>
+                <p>This application leverages a powerful combination of Natural Language Processing (NLP) and machine learning. At its core is a Random Forest Classifier, a robust model trained on a diverse dataset of news articles. We use a TF-IDF (Term Frequency-Inverse Document Frequency) Vectorizer to convert text into a meaningful representation of numbers, allowing our model to learn the patterns that distinguish real news from fake.</p>
+
+                <h3>How It Works</h3>
+                <p>When you submit a news article, our system processes the text, analyzes its linguistic features, and compares it against the patterns learned during training. The result is a prediction of whether the article is likely to be real or fake. While no model is perfect, we are continuously working to improve its accuracy and reliability.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
